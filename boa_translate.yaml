@@ -1,0 +1,239 @@
+---
+pattern: "BARNES&?NOBLE"
+payee: "Barnes & Noble"
+category: "Expenses:Entertainment:Books"
+---
+pattern: "THE PANTRY, INC.*PAYROLL"
+payee: "The Pantry, Inc."
+category: "Income:Paycheck:The Pantry"
+---
+pattern: "HOSTED SOLUTIONS.*PAYROLL"
+payee: "Hosted Solutions"
+category: "Income:Paycheck:Hosted Solutions"
+---
+pattern: "ULTIMUS"
+payee: "Ultimus, Inc."
+category: "Income:Paycheck:Ultimus"
+---
+pattern: "MOE'?S SOUTHWEST GRILL"
+payee: "Moe's Southwestern Grill"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "PROG SO EASTERN"
+payee: "Progressive Insurance"
+category: "Expenses:Auto:Insurance"
+---
+pattern: "SHELL OIL"
+payee: "Shell Oil"
+category: "Expenses:Auto:Gas"
+---
+pattern: "APL\\*ITUNES"
+payee: "Apple, Inc."
+category: "Expenses:Entertainment:Music"
+---
+pattern: "CHILI'S"
+payee: "Chili's Restaurant"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "KANGAROO EXPRESS"
+payee: "Kangaroo"
+category: "Expenses:Auto:Gas"
+---
+pattern: "KANGAROO EXP"
+payee: "Kangaroo convenience store/gas station"
+category: "Expenses:Auto:Gas"
+---
+pattern: "PEARL CHINESE RESTAURAN"
+payee: "Perl Chinese Restaurant"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "DD/BR"
+payee: "Dunkin Donuts / Baskin Robins"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "IHOP"
+payee: "IHOP"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "BKOFAMERICA ATM.*DEPOSIT"
+payee: "Bank of America ATM deposit"
+category: "Income:Cash"
+---
+pattern: "PURCHASE WAL-MART"
+payee: "Wal-Mart"
+---
+pattern: "WWW.NETFLIX.COM"
+payee: "Netflix"
+category: "Expenses:Entertainment:Movie Rentals"
+---
+pattern: "MCDONALD'S"
+payee: "McDonalds"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "KFC"
+payee: "KFC"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "ARBY'S"
+payee: "Arby's"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "JIMMY JOHN'S"
+payee: "Jimmy John's"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "FOOD LION"
+payee: "Food Lion"
+category: "Expenses:Food:Groceries"
+---
+pattern: "CHICK-FIL-A"
+payee: "Chick-Fil-A"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "HARRIS TEETER"
+payee: "Harris Teeter"
+category: "Expenses:Food:Groceries"
+---
+pattern: "BOJANGLES"
+payee: "Bojangles"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "MISSION VALLEY CINEMAS"
+payee: "Mission Valley theater"
+category: "Expenses:Entertainment:Movies"
+---
+pattern: "HAN-DEE HUGO'?S"
+payee: "Han-dee Hugo's gas station"
+category: "Expenses:Auto:Gas"
+---
+pattern: "EL RODEO MEXICAN"
+payee: "El Rodeo"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "PANERA BREAD"
+payee: "Panera Bread"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "PURCHASE TARGET"
+payee: "Target"
+---
+pattern: "CICI'S"
+payee: "Cici's Pizza"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "CARMIKE"
+payee: "Carmike Cinemas"
+category: "Expenses:Entertainment:Movies"
+---
+pattern: "I LOVE NY PIZZA"
+payee: "I Love NY Pizza"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "CYCLE LOGIC"
+payee: "Cycle Logic"
+category: "Expenses:Bicycle"
+---
+pattern: "STARBUCKS USA"
+payee: "Starbucks"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "STEAK ESCAPE"
+payee: "The Great Steak Escape"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "TACO BELL"
+payee: "Taco Bell"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "SONIC DRIVE IN"
+payee: "Sonic Drive-In"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "JIFFY LUBE"
+payee: "Jiffy Lube"
+---
+pattern: "DUNKIN"
+payee: "Dunkin Donuts"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "ON THE BORDER"
+payee: "On the Border Mexican Restaurant"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "JASON'S DELI"
+payee: "Jason's Deli"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "BIG LOTS"
+payee: "Big Lots"
+---
+pattern: "VILLA PIZZA"
+payee: "Villa Pizza"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "KERR DRUG"
+payee: "Kerr Drug"
+---
+pattern: "EXXONMOBIL"
+payee: "Exxon"
+category: "Expenses:Auto:Gas"
+---
+pattern: "RADIO SHACK"
+payee: "Radio Shack"
+---
+pattern: "BKOFAMERICA ATM.*WITHDRWL"
+payee: "Bank of America ATM withdrawl"
+category: "Income:Cash"
+---
+pattern: "BORDERS BKS"
+payee: "Borders bookstore"
+category: "Expenses:Entertainment:Books"
+---
+pattern: "ABEBOOKS.COM"
+payee: "Abe Books"
+category: "Expenses:School:Textbooks"
+---
+pattern: "KMART"
+payee: "K-Mart"
+---
+pattern: "PANDORA.COM"
+payee: "Pandora Radio"
+category: "Expenses:Entertainment:Music"
+---
+pattern: "AMOCO"
+payee: "Amoco/BP Gas"
+category: "Expenses:Auto:Gas"
+---
+pattern: "COOK OUT"
+payee: "Cook-Out"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "WILCO"
+payee: "Wilco gas station"
+category: "Expenses:Auto:Gas"
+---
+pattern: "HARDEE'?S"
+payee: "Hardee's"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "PILOT"
+payee: "Pilot truck stop"
+category: "Expenses:Auto:Gas"
+---
+pattern: "ANDY'?S WINGS"
+payee: "Andy's Wings & Burgers"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "THE SALVATION ARMY"
+payee: "Salvation Army"
+---
+pattern: "QDOBA"
+payee: "Qdoba Mexican Restaurant"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "CIRCLE K"
+payee: "Circle K gas station"
+category: "Expenses:Auto:Gas"
+---
+pattern: "OFFICE MAX"
+payee: "Office Max"
