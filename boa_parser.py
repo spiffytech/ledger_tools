@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
 # Author: Brian Cottingham
-# 2010-07-08
+# spiffytech@gmail.com
+# 2010-07-12
+# github.com/spiffytech/ledger_tools
 # Parses the Bank of America "downloadable text" files and spits out Ledger-formated data
 
 import time
