@@ -102,13 +102,8 @@ def print_ledger(stmt_file, init, account_name):
 
 
 def main():
-    oparser = OptionParser()
-    oparser.add_option("-f", "--file", 
-        action="store", 
-        dest="boa_statement", 
-        help="Bank of America statement file, 'Printable Text Format'"
-    )
-
+    usage = "usage: %prog [options] [FILE]\nFormats your Bank of America 'plain text' statement file into a Ledger-friendly format."
+    oparser = OptionParser(usage=usage)
     oparser.add_option("-i", "--init", 
         action="store_true", 
         dest="init", 
@@ -124,13 +119,15 @@ def main():
     )
 
     (options, args) = oparser.parse_args()
-    if options.boa_statement is None:
+    if len(args) == 0:
         oparser.error("Statement filename is required")
+    else:
+        boa_statement = args[0]
 
     if options.init:
-        print_equity(options.boa_statement)
+        print_equity(boa_statement)
     print_equity
-    print_ledger(stmt_file=options.boa_statement, init=options.init, account_name=options.account_name)
+    print_ledger(stmt_file=boa_statement, init=options.init, account_name=options.account_name)
     
 
 

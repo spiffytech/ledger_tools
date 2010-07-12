@@ -14,6 +14,10 @@
 #   Author: Brian Cottingham
 #   spiffytech@gmail.com
 #   github.com/spiffytech/ledger_tools
+#
+#   "pattern": regular expression to match statement file's 'description' column
+#   "payee": If available, is used instead of description's value in transaction
+#   "category": Account the transfer goes to in the transaction
 ---
 pattern: "BARNES&?NOBLE"
 payee: "Barnes & Noble"
