@@ -45,7 +45,7 @@ def print_equity(boa_statement):
 ''' % {"date": init_date, "balance": init_balance}
 
 
-def print_ledger(boa_statement, init=False):
+def print_ledger(stmt_file, init, account_name):
     """Parses the BoA statement file and prints all transactions in a Ledger-friendly format."""
 
     # Regex to match/parse transactions in the BoA statement file
@@ -60,7 +60,7 @@ def print_ledger(boa_statement, init=False):
 
     desc_patterns = list(yaml.load_all(open(boa_translations)))
 
-    for line in open(boa_statement):
+    for line in open(stmt_file):
         line = line.strip()
         rematch = re.match(regex, line)
         if rematch:
@@ -72,7 +72,7 @@ def print_ledger(boa_statement, init=False):
             trans_date = time.strftime("%Y/%m/%d", time_tuple)
 
             credit = "something"  # Dummy category to use when we don't know the real category
-            debit = "Assets:Bank:Checking"  # Assume all transactions are for a checking account
+            debit = account_name
             amount = str(float(amount)*-1)
 
             # Parse the BoA descriptions for payee/category
@@ -106,13 +106,22 @@ def main():
     oparser.add_option("-f", "--file", 
         action="store", 
         dest="boa_statement", 
-        help="Bank of America statement file, 'Printable Text Format'")
+        help="Bank of America statement file, 'Printable Text Format'"
+    )
 
     oparser.add_option("-i", "--init", 
         action="store_true", 
         dest="init", 
         help="Initialize a ledger from scratch. Prints an Equity->Checking transfer at the top, and clears all transactions.", 
-        default=False)
+        default=False
+    )
+
+    oparser.add_option("--account",
+        action="store",
+        dest="account_name",
+        help="Name of the bank account this statement is for",
+        default="Assets:Bank:Checking"
+    )
 
     (options, args) = oparser.parse_args()
     if options.boa_statement is None:
@@ -121,7 +130,7 @@ def main():
     if options.init:
         print_equity(options.boa_statement)
     print_equity
-    print_ledger(options.boa_statement, options.init)
+    print_ledger(stmt_file=options.boa_statement, init=options.init, account_name=options.account_name)
     
 
 
