@@ -30,7 +30,7 @@ else:
     exit(1)
 
 
-def print_equity(boa_statement):
+def print_equity(boa_statement, account_name):
     """Prints a transaction that initializes the account balance. Used when creating a new ledger file."""
     for line in open(boa_statement):
         if line.startswith("Beginning balance as of"):
@@ -42,9 +42,9 @@ def print_equity(boa_statement):
 
     print '''
 %(date)s * Opening balance
-    Assets:Bank:Checking  $%(balance)s
+    %(account)s  $%(balance)s
     Equity:Opening Balance
-''' % {"date": init_date, "balance": init_balance}
+''' % {"date": init_date, "balance": init_balance, "account": account_name}
 
 
 def print_ledger(stmt_file, init, account_name):
@@ -127,7 +127,7 @@ def main():
         boa_statement = args[0]
 
     if options.init:
-        print_equity(boa_statement)
+        print_equity(boa_statement, account_name=options.account_name)
     print_equity
     print_ledger(stmt_file=boa_statement, init=options.init, account_name=options.account_name)
     
