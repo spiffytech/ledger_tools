@@ -257,3 +257,14 @@ category: "Expenses:Auto:Gas"
 ---
 pattern: "OFFICE MAX"
 payee: "Office Max"
+---
+pattern: "BEST ?BUY"
+payee: "Best Buy"
+---
+pattern: "ZAXBY'?s"
+payee: "Zaxby's"
+category: "Expenses:Food:Eating Out"
+---
+pattern: "GUMBY'?S PIZZA"
+payee: "Gumby's Pizza"
+category: "Expenses:Food:Eating Out"
